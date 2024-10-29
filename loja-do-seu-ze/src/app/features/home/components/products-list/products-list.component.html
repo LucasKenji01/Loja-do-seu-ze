@@ -1,0 +1,16 @@
+<div class="section-list-card-product">
+    <h1>Produtos</h1>
+    <div class="list-card-product" *ngFor="let product of products">
+        <div class="card-product">
+            <img src="{{ product.image }}" alt="{{ product.name }}" width="298px" height="300px">
+            <div class="card-product-info">
+                <h2>{{ product.name }}</h2>
+                <div>
+                    <p>{{ product.price | currency: 'R$' }}</p>
+                    <p>Quantidade: {{ product.quantity }}</p>
+                </div>
+                <p [ngClass]="{ 'em-estoque': product.available, 'falta-estoque': !product.available }">{{ product.available ? 'Em estoque' : 'Produto em falta' }}</p>
+            </div>
+        </div>
+    </div>
+</div>

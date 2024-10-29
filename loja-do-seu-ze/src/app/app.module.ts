@@ -7,6 +7,11 @@ import { HomeModule } from './features/home/home.module';
 import { ContactModule } from './features/contact/contact.module';
 import { LoginModule } from './features/login/login.module';
 import { SellModule } from './features/sell/sell.module';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt'
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { SellModule } from './features/sell/sell.module';
     LoginModule,
     SellModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: "pt-BR"
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
