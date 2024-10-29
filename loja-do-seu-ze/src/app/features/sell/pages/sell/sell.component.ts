@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sell.component.scss']
 })
 export class SellComponent {
+  constructor() { }
 
+  ngOnInit(): void {
+    
+  }
 }

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  constructor() { }
 
+  ngOnInit(): void {
+  }
 }
