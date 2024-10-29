@@ -1,10 +1,30 @@
 li {
     list-style: none;
     cursor: pointer;
-    height: 25px;
 }
+
+li:hover {
+    text-decoration: underline;
+}
+
 ul {
     display: flex;
-    width: 100%;
     gap: 25px;
+    padding: 0px;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    display: flex;
+    cursor: pointer;
 }
