@@ -16,13 +16,6 @@ export class ProductsListComponent {
       available: true
     },
     {
-      name: "Lego Minecraft",
-      quantity: 94,
-      price: 800,
-      image: "../../../../assets/lego.jfif",
-      available: true
-    },
-    {
       name: "Notebook",
       quantity: 43,
       price: 2500,
@@ -41,6 +34,13 @@ export class ProductsListComponent {
       quantity: 30,
       price: 200,
       image: "../../../../assets/airfryer.jfif",
+      available: true
+    },
+    {
+      name: "Lego Minecraft",
+      quantity: 94,
+      price: 800,
+      image: "../../../../assets/lego.jfif",
       available: true
     },
     {
